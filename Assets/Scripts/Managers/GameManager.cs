@@ -27,7 +27,7 @@ namespace Managers
         private void BeginGame()
         {
             _mazeInstance = Instantiate(mazePrefab);
-            StartCoroutine(_mazeInstance.Generate());
+            _mazeInstance.Generate();
         }
     
         //Restart game

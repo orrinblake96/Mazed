@@ -15,6 +15,7 @@
           <e p="MazeCell.cs" t="Include" />
           <e p="MazeCellEdge.cs" t="Include" />
           <e p="MazeDirection.cs" t="Include" />
+          <e p="MazeDoor.cs" t="Include" />
           <e p="MazePassage.cs" t="Include" />
           <e p="MazeWall.cs" t="Include" />
           <e p="Player" t="Include">

@@ -9,6 +9,9 @@ public class Maze : MonoBehaviour
     public MazePassage passagePrefab;
     public MazeWall[] wallPrefabs;
     public MazeCell cellPrefab;
+    public MazeDoor doorPrefab;
+
+    [Range(0f, 1f)] public float doorProbability;
 
     private MazeCell[ , ] _cells;
 
@@ -16,7 +19,7 @@ public class Maze : MonoBehaviour
     {
         return _cells[coordinates.x, coordinates.z];
     }
-    public IEnumerator Generate () 
+    public void Generate () 
     {
         WaitForSeconds delay = new WaitForSeconds(generationStepDelay);
         _cells = new MazeCell[size.x, size.z];
@@ -24,7 +27,7 @@ public class Maze : MonoBehaviour
         DoFirstGenerationStep(activeCells);
         while (activeCells.Count > 0) 
         {
-            yield return delay;
+//            yield return delay;
             DoNextGenerationStep(activeCells);
         }
     }
@@ -73,7 +76,7 @@ public class Maze : MonoBehaviour
         newCell.name = "Maze Cell " + coordinates.x + ", " + coordinates.z;
         newCell.transform.parent = transform;
         newCell.transform.localPosition =
-            new Vector3(coordinates.x - size.x * 0.5f + 0.5f, 0f, coordinates.z - size.z * 0.5f + 0.5f);
+            new Vector3(coordinates.x - size.x * 0.5f + 0.5f, 0.5f, coordinates.z - size.z * 0.5f + 0.5f);
         return newCell;
     }
     
@@ -86,10 +89,12 @@ public class Maze : MonoBehaviour
         }
     }
     
-    private void CreatePassage (MazeCell cell, MazeCell otherCell, MazeDirection direction) {
-        MazePassage passage = Instantiate(passagePrefab) as MazePassage;
+    private void CreatePassage (MazeCell cell, MazeCell otherCell, MazeDirection direction)
+    {
+        MazePassage prefab = Random.value < doorProbability ? doorPrefab : passagePrefab;
+        MazePassage passage = Instantiate(prefab) as MazePassage;
         passage.Initialize(cell, otherCell, direction);
-        passage = Instantiate(passagePrefab) as MazePassage;
+        passage = Instantiate(prefab) as MazePassage;
         passage.Initialize(otherCell, cell, direction.GetOpposite());
     }
     

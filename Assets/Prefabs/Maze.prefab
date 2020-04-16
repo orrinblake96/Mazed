@@ -62,3 +62,6 @@ MonoBehaviour:
   - {fileID: 1183755554838310241, guid: ce4489b4ccbac4b5aa2713dcc5663dd9, type: 3}
   cellPrefab: {fileID: 4077607396314041365, guid: 05db6263769174bb29464948941d7577,
     type: 3}
+  doorPrefab: {fileID: 5755997011823778095, guid: 8ce4ff25e1fd847c1a22fef36c415e21,
+    type: 3}
+  doorProbability: 0.1
