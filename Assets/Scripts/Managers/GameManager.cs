@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 namespace Managers
 {
@@ -11,13 +12,14 @@ namespace Managers
         // Start is called before the first frame update
         private void Start()
         {
-            BeginGame();
+//            BeginGame();
+            _mazeInstance = Instantiate(mazePrefab) as Maze;
         }
 
         // Update is called once per frame
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.L))
             {
                 RestartGame();
             }
@@ -26,7 +28,7 @@ namespace Managers
         //Begin game
         private void BeginGame()
         {
-            _mazeInstance = Instantiate(mazePrefab);
+            _mazeInstance = Instantiate(mazePrefab) as Maze;
             _mazeInstance.Generate();
         }
     
