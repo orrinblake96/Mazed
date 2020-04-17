@@ -24,9 +24,9 @@ public class DayNightController : MonoBehaviour
 
         currentTimeOfDay += (Time.deltaTime / secondsInFullDay) * timeMultiplier;
 
-        if (currentTimeOfDay >= 1)
+        if (currentTimeOfDay >= .92f || currentTimeOfDay <= .1)
         {
-            currentTimeOfDay = 0;
+            currentTimeOfDay = .11f;
         }
 
         RenderSettings.fogColor = fogColors.Evaluate(currentTimeOfDay);
