@@ -4,21 +4,8 @@
     <list default="true" id="0b9786cb-54d7-495c-a179-01ec3a733754" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Maze.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Maze.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MazeWall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting5.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Maze.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Maze.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeCell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeCell.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,8 +54,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeWall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeRoom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Maze.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Button/CreateMazeButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -127,7 +115,7 @@
       <updated>1586966434428</updated>
       <workItem from="1586966439090" duration="13120000" />
       <workItem from="1587056242375" duration="1144000" />
-      <workItem from="1587117478786" duration="5805000" />
+      <workItem from="1587117478786" duration="8509000" />
     </task>
     <servers />
   </component>

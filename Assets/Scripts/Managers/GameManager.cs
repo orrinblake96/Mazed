@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
 
 namespace Managers
@@ -8,7 +11,8 @@ namespace Managers
         public Maze mazePrefab;
 
         private Maze _mazeInstance;
-        
+        private bool _readyToGenerate;
+
         // Start is called before the first frame update
         private void Start()
         {
@@ -19,7 +23,7 @@ namespace Managers
         // Update is called once per frame
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.L))
+            if (Input.GetKeyDown(KeyCode.E) && _readyToGenerate)
             {
                 RestartGame();
             }
@@ -38,6 +42,18 @@ namespace Managers
             StopAllCoroutines();
             Destroy(_mazeInstance.gameObject);
             BeginGame();
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            _readyToGenerate = true;
+            GameObject.Find("Button/PressButtonText").GetComponent<Text>().enabled = true;
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            _readyToGenerate = false;
+            GameObject.Find("Button/PressButtonText").GetComponent<Text>().enabled = false;
         }
     }
 }
