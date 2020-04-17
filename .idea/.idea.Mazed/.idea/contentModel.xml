@@ -28,9 +28,12 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="DayNightController.cs" t="Include" />
           <e p="IntVector2.cs" t="Include" />
           <e p="Managers" t="Include">
+            <e p="AudioManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+            <e p="Sounds.cs" t="Include" />
           </e>
           <e p="Maze.cs" t="Include" />
           <e p="MazeCell.cs" t="Include" />
@@ -44,6 +47,7 @@
           <e p="Player" t="Include">
             <e p="Player.cs" t="Include" />
           </e>
+          <e p="SunControl.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">

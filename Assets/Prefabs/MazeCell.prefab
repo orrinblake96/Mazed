@@ -141,3 +141,4 @@ MonoBehaviour:
   coordinates:
     x: 0
     z: 0
+  room: {fileID: 0}

@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e42945bbad39744e984d942b0680d02d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generationStepDelay: 0.005
+  generationStepDelay: 0.001
   size:
     x: 20
     z: 20
