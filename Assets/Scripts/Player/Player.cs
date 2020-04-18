@@ -1,14 +1,18 @@
 ﻿using System;
+using Managers;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
         public Transform teleportingPadTarget;
+        public GameManager gameManager;
+        
         private MazeCell _currentCell;
 
         private void Start()
         {
             teleportingPadTarget = GameObject.Find("Enviroment/TeleportingPad").GetComponent<Transform>();
+            gameManager = GameObject.Find("Enviroment/ButtonTower/Button").GetComponent<GameManager>();
         }
 
         public void SetLocation (MazeCell cell) {
@@ -20,8 +24,10 @@ public class Player : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                other.gameObject.transform.position = teleportingPadTarget.transform.position;
+                FindObjectOfType<AudioManager>().Play("Teleport");
+                other.gameObject.transform.position = teleportingPadTarget.transform.position + (Vector3.up/2);
                 other.gameObject.transform.rotation = teleportingPadTarget.transform.rotation;
+                gameManager.RestartAfterReward();
             }
         }
     }

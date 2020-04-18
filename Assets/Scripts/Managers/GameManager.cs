@@ -68,6 +68,17 @@ namespace Managers
             _readyToGenerate = false;
             GameObject.Find("Button/PressButtonText").GetComponent<Text>().enabled = false;
         }
+
+        public void RestartAfterReward()
+        {
+//            RestartGame();
+            StopAllCoroutines();
+            Destroy(_mazeInstance.gameObject);
+            if (_rewardInstance != null) {
+                Destroy(_rewardInstance.gameObject);
+            }
+            _mazeInstance = Instantiate(mazePrefab) as Maze;
+        }
     }
 }
 

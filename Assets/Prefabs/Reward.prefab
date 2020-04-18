@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 414615870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.16296302, y: 0.16296302, z: 0.16296302}
+  m_LocalScale: {x: 0.120893724, y: 0.120893724, z: 0.120893724}
   m_Children: []
   m_Father: {fileID: 747801995}
   m_RootOrder: 3
@@ -4779,7 +4779,7 @@ Transform:
   m_GameObject: {fileID: 747801994}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8633, y: 0.8633, z: 0.8633}
   m_Children:
   - {fileID: 1110896427}
   - {fileID: 1588321695}
@@ -4815,7 +4815,7 @@ Transform:
   m_GameObject: {fileID: 1110896426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.16296302, y: 0.16296302, z: 0.16296302}
+  m_LocalScale: {x: 0.120893724, y: 0.120893724, z: 0.120893724}
   m_Children: []
   m_Father: {fileID: 747801995}
   m_RootOrder: 0
@@ -9569,7 +9569,7 @@ Transform:
   m_GameObject: {fileID: 1277909829}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.16296302, y: 0.16296302, z: 0.16296302}
+  m_LocalScale: {x: 0.120893724, y: 0.120893724, z: 0.120893724}
   m_Children: []
   m_Father: {fileID: 747801995}
   m_RootOrder: 2
@@ -14323,7 +14323,7 @@ Transform:
   m_GameObject: {fileID: 1588321694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.16296302, y: 0.16296302, z: 0.16296302}
+  m_LocalScale: {x: 0.120893724, y: 0.120893724, z: 0.120893724}
   m_Children: []
   m_Father: {fileID: 747801995}
   m_RootOrder: 1
@@ -18178,9 +18178,9 @@ ParticleSystem:
     ratio: 0.5
     lifetime:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
-      minScalar: 1
+      minScalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -18234,7 +18234,7 @@ ParticleSystem:
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
-    dieWithParticles: 1
+    dieWithParticles: 0
     sizeAffectsWidth: 1
     sizeAffectsLifetime: 0
     inheritParticleColor: 1
@@ -19159,3 +19159,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportingPadTarget: {fileID: 5246871427112914621, guid: 5316a7538d7a24ae29f5134fc09c2d69,
     type: 3}
+  gameManager: {fileID: 0}
