@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
             if (other.gameObject.CompareTag("Player"))
             {
                 other.gameObject.transform.position = teleportingPadTarget.transform.position;
+                other.gameObject.transform.rotation = teleportingPadTarget.transform.rotation;
             }
         }
     }
