@@ -7,12 +7,15 @@ public class Player : MonoBehaviour
         public Transform teleportingPadTarget;
         public GameManager gameManager;
         
+        public ParticleSystem teleporterParticleSystem;
+        
         private MazeCell _currentCell;
 
         private void Start()
         {
             teleportingPadTarget = GameObject.Find("Enviroment/TeleportingPad").GetComponent<Transform>();
             gameManager = GameObject.Find("Enviroment/ButtonTower/Button").GetComponent<GameManager>();
+            teleporterParticleSystem = GameObject.Find("TeleporterPS").GetComponent<ParticleSystem>();
         }
 
         public void SetLocation (MazeCell cell) {
@@ -24,6 +27,7 @@ public class Player : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Player"))
             {
+//                teleporterParticleSystem.Play();
                 FindObjectOfType<AudioManager>().Play("Teleport");
                 other.gameObject.transform.position = teleportingPadTarget.transform.position + (Vector3.up/2);
                 other.gameObject.transform.rotation = teleportingPadTarget.transform.rotation;
