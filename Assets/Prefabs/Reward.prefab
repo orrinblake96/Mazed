@@ -89,10 +89,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7903549047799005141}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.41
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4604814058169622660
 MonoBehaviour:
@@ -106,3 +106,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87effdc1950274790acd835a83ef7d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teleportingPadTarget: {fileID: 5246871427112914621, guid: 5316a7538d7a24ae29f5134fc09c2d69,
+    type: 3}
