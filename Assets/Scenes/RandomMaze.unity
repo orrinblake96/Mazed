@@ -6301,6 +6301,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3847422101123975455, guid: 83c7d9367b7a54f9e9d952bc90343951,
+        type: 3}
+      propertyPath: bulletImpactEffect
+      value: 
+      objectReference: {fileID: 5319669998689621603, guid: 0f817991c9a7b4fbdbe4bf9062a2683e,
+        type: 3}
     - target: {fileID: 9019223859659978750, guid: 83c7d9367b7a54f9e9d952bc90343951,
         type: 3}
       propertyPath: far clip plane

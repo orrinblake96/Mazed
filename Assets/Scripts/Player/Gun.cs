@@ -37,7 +37,8 @@ public class Gun : MonoBehaviour
         {
             
             //Instantiate Bullet Impact effect
-            Instantiate(bulletImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            GameObject impactBulletGameObject = Instantiate(bulletImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            Destroy(impactBulletGameObject, .5f);
         }
     }
 }
