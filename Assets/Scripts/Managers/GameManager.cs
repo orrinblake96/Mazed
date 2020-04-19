@@ -60,13 +60,13 @@ namespace Managers
         private void OnTriggerEnter(Collider other)
         {
             _readyToGenerate = true;
-            GameObject.Find("Button/PressButtonText").GetComponent<Text>().enabled = true;
+            GameObject.Find("ButtonPressCanvas/PressButtonText").GetComponent<Text>().enabled = true;
         }
 
         private void OnTriggerExit(Collider other)
         {
             _readyToGenerate = false;
-            GameObject.Find("Button/PressButtonText").GetComponent<Text>().enabled = false;
+            GameObject.Find("ButtonPressCanvas/PressButtonText").GetComponent<Text>().enabled = false;
         }
 
         public void RestartAfterReward()
