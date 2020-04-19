@@ -10,6 +10,7 @@ public class Gun : MonoBehaviour
     public float timeBetweenBullets = 0.15f;
 
     public ParticleSystem muzzleFlash;
+    public GameObject bulletImpactEffect;
     
     private float _timer;
 
@@ -34,7 +35,9 @@ public class Gun : MonoBehaviour
         
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name);
+            
+            //Instantiate Bullet Impact effect
+            Instantiate(bulletImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
         }
     }
 }

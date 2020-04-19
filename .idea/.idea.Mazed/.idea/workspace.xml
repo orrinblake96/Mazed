@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9786cb-54d7-495c-a179-01ec3a733754" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Prefabs/Flare.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Prefabs/Flare.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +64,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DayNightController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/48 Particle Effect Pack/Script/csShowAllEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" />
       </list>
     </option>
   </component>
@@ -125,6 +126,7 @@
       <workItem from="1587056242375" duration="1144000" />
       <workItem from="1587117478786" duration="14274000" />
       <workItem from="1587203473527" duration="9587000" />
+      <workItem from="1587313126687" duration="831000" />
     </task>
     <servers />
   </component>

@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
         {
             teleportingPadTarget = GameObject.Find("Enviroment/TeleportingPad").GetComponent<Transform>();
             gameManager = GameObject.Find("Enviroment/ButtonTower/Button").GetComponent<GameManager>();
-            teleporterParticleSystem = GameObject.Find("TeleporterPS").GetComponent<ParticleSystem>();
+//            teleporterParticleSystem = GameObject.Find("TeleporterPS").GetComponent<ParticleSystem>();
         }
 
         public void SetLocation (MazeCell cell) {
