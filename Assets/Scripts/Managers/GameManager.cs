@@ -10,6 +10,7 @@ namespace Managers
         public Maze mazePrefab;
         public Player rewardPrefab;
         public Animator buttonPressedAnimation;
+        public GameObject startingTeleporter;
 
         private Maze _mazeInstance;
         private bool _readyToGenerate;
@@ -29,6 +30,7 @@ namespace Managers
         {
             if (Input.GetKeyDown(KeyCode.E) && _readyToGenerate)
             {
+                startingTeleporter.SetActive(true);
                 FindObjectOfType<AudioManager>().Play("ButtonPress");
                 buttonPressedAnimation.SetTrigger(ButtonPressed);
                 RestartGame();
