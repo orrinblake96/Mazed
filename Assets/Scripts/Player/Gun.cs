@@ -1,4 +1,5 @@
-﻿using Managers;
+﻿using System;
+using Managers;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
@@ -13,9 +14,15 @@ public class Gun : MonoBehaviour
     public GameObject bulletImpactEffect;
     
     private float _timer;
+    private TimeManager _timeManager;
+
+    private void Start()
+    {
+        _timeManager = GetComponent<TimeManager>();
+    }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         _timer += Time.deltaTime;
         
@@ -27,7 +34,7 @@ public class Gun : MonoBehaviour
         }
     }
 
-    void Shoot()
+    private void Shoot()
     {
         _timer = 0f;
         
@@ -38,7 +45,25 @@ public class Gun : MonoBehaviour
             
             //Instantiate Bullet Impact effect
             GameObject impactBulletGameObject = Instantiate(bulletImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-            Destroy(impactBulletGameObject, .5f);
+            Destroy(impactBulletGameObject, 2f);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("MazeFloor"))
+        {
+            Debug.Log("here");
+            _timeManager.TimerStart();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("MazeFloor"))
+        {
+            Debug.Log("out of here");
+            _timeManager.TimerStop();
         }
     }
 }
