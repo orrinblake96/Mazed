@@ -54,7 +54,9 @@
           <e p="Managers" t="Include">
             <e p="AudioManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+            <e p="InsideMazeTeleporter.cs" t="Include" />
             <e p="Sounds.cs" t="Include" />
+            <e p="TeleportIntoMaze.cs" t="Include" />
             <e p="TimeManager.cs" t="Include" />
           </e>
           <e p="Maze.cs" t="Include" />
