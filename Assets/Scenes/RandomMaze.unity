@@ -592,7 +592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &876886772
 Transform:
   m_ObjectHideFlags: 0
@@ -695,7 +695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b99ae1ec540784127ba7d48fa6046dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleporterCellLocation: {fileID: 0}
 --- !u!1 &949798456
 GameObject:
   m_ObjectHideFlags: 0

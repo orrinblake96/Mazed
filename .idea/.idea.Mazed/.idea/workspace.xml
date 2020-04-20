@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9786cb-54d7-495c-a179-01ec3a733754" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/InsideMazeTeleporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/InsideMazeTeleporter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +131,7 @@
       <workItem from="1587056242375" duration="1144000" />
       <workItem from="1587117478786" duration="14274000" />
       <workItem from="1587203473527" duration="9587000" />
-      <workItem from="1587313126687" duration="9577000" />
+      <workItem from="1587313126687" duration="10221000" />
     </task>
     <servers />
   </component>
