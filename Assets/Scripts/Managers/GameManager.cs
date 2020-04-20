@@ -71,7 +71,6 @@ namespace Managers
 
         public void RestartAfterReward()
         {
-//            RestartGame();
             StopAllCoroutines();
             Destroy(_mazeInstance.gameObject);
             if (_rewardInstance != null) {
