@@ -9,12 +9,14 @@ namespace Managers
     {
         public Maze mazePrefab;
         public Player rewardPrefab;
+        public InsideMazeTeleporter teleporterPrefab;
         public Animator buttonPressedAnimation;
         public GameObject startingTeleporter;
 
         private Maze _mazeInstance;
         private bool _readyToGenerate;
         private Player _rewardInstance;
+        private InsideMazeTeleporter _mazeTeleporterInstance;
         private static readonly int ButtonPressed = Animator.StringToHash("ButtonPressed");
 
         // Start is called before the first frame update
@@ -44,6 +46,9 @@ namespace Managers
             _mazeInstance = Instantiate(mazePrefab) as Maze;
             _mazeInstance.Generate();
             yield return new WaitForSeconds(1f);
+            _mazeTeleporterInstance = Instantiate(teleporterPrefab) as InsideMazeTeleporter;
+            _mazeTeleporterInstance.SetTeleporterLocation(_mazeInstance.GetCell(_mazeInstance.RandomCoordinates));
+            yield return new WaitForSeconds(1f);
             _rewardInstance = Instantiate(rewardPrefab) as Player;
             _rewardInstance.SetLocation(_mazeInstance.GetCell(_mazeInstance.RandomCoordinates));
         }
@@ -55,6 +60,9 @@ namespace Managers
             Destroy(_mazeInstance.gameObject);
             if (_rewardInstance != null) {
                 Destroy(_rewardInstance.gameObject);
+            }
+            if (_mazeTeleporterInstance != null) {
+                Destroy(_mazeTeleporterInstance.gameObject);
             }
             StartCoroutine(BeginGame());
         }
@@ -77,6 +85,9 @@ namespace Managers
             Destroy(_mazeInstance.gameObject);
             if (_rewardInstance != null) {
                 Destroy(_rewardInstance.gameObject);
+            }
+            if (_mazeTeleporterInstance != null) {
+                Destroy(_mazeTeleporterInstance.gameObject);
             }
             _mazeInstance = Instantiate(mazePrefab) as Maze;
         }

@@ -536,6 +536,8 @@ MonoBehaviour:
     type: 3}
   rewardPrefab: {fileID: 4604814058169622660, guid: 795591ef339b24598895ae9d13f24fae,
     type: 3}
+  teleporterPrefab: {fileID: 945467432304614020, guid: 03e40dda9c6e64c3890863eb8f7a5a17,
+    type: 3}
   buttonPressedAnimation: {fileID: 819599432}
   startingTeleporter: {fileID: 876886771}
 --- !u!135 &819599431
