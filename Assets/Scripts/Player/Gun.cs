@@ -45,6 +45,10 @@ public class Gun : MonoBehaviour
             
             //Instantiate Bullet Impact effect
             GameObject impactBulletGameObject = Instantiate(bulletImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            
+            // If time reducing object is hit then call function
+            if(hit.transform.name == "TimeReducer(Clone)") _timeManager.TimerReduced(hit.transform.gameObject);
+            
             Destroy(impactBulletGameObject, 2f);
         }
     }
