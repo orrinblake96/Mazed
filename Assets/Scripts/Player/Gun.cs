@@ -57,7 +57,6 @@ public class Gun : MonoBehaviour
     {
         if (other.gameObject.CompareTag("MazeFloor"))
         {
-            Debug.Log("here");
             _timeManager.TimerStart();
         }
     }
@@ -66,7 +65,6 @@ public class Gun : MonoBehaviour
     {
         if (other.gameObject.CompareTag("MazeFloor"))
         {
-            Debug.Log("out of here");
             _timeManager.TimerStop();
         }
     }
