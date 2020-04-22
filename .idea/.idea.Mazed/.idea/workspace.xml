@@ -3,14 +3,112 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9786cb-54d7-495c-a179-01ec3a733754" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FPSController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FPSController.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BlackMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BlackMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BlueMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BlueMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ButtonMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ButtonMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ButtonTowerMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ButtonTowerMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/DoorMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/DoorMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GreenMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GreenMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GunMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GunMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PinkMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PinkMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PlayerSkinMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PlayerSkinMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/RaygunTipMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/RaygunTipMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/RedMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/RedMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ShinySilverMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ShinySilverMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/SkyboxMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/SkyboxMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/StarUnlit.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/StarUnlit.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TeleporterBeginMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TeleporterBeginMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TeleporterMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TeleporterMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TimeReducerMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TimeReducerMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/WallMaterial1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/WallMaterial1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/WallMaterial2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/WallMaterial2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/WallMaterial3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/WallMaterial3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/WallMaterial4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/WallMaterial4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/YellowMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/YellowMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AddTimeObject.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AddTimeObject.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BeamLight.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BeamLight.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FPSController.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FPSController.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InsideMazeTeleporter.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InsideMazeTeleporter.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Maze.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Maze.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeCell.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeCell.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeDoor 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeDoor 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeDoor.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeDoor.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazePassage.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazePassage.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWall.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWall.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeWallPainting5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MuzzleFlashLight.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MuzzleFlashLight.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Reward.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Reward.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StarParticles.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StarParticles.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Stars.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Stars.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TeleporterPS.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TeleporterPS.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TimeReducer.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TimeReducer.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/InsideMazeTeleporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/InsideMazeTeleporter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/Help_Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/Help_Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,9 +120,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/FPSController.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SunControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeRoomSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CityManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DayNightController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Maze.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeDoor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -34,6 +132,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/TimeReducerLoactions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Sounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TreeTowerBlock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazePassage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -81,6 +180,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TimeReducerLoactions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/BuildingProfile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DeluxeTowerBlock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/CityManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CityManager.cs" />
       </list>
     </option>
   </component>
@@ -143,6 +246,7 @@
       <workItem from="1587203473527" duration="9587000" />
       <workItem from="1587313126687" duration="10511000" />
       <workItem from="1587490866613" duration="6693000" />
+      <workItem from="1587575366027" duration="2490000" />
     </task>
     <servers />
   </component>
