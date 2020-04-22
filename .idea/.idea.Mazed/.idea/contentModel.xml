@@ -58,6 +58,7 @@
             <e p="Sounds.cs" t="Include" />
             <e p="TeleportIntoMaze.cs" t="Include" />
             <e p="TimeManager.cs" t="Include" />
+            <e p="TimeReducerLoactions.cs" t="Include" />
           </e>
           <e p="Maze.cs" t="Include" />
           <e p="MazeCell.cs" t="Include" />

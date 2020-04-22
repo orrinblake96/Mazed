@@ -89,7 +89,7 @@ MeshCollider:
   m_GameObject: {fileID: 35748169473294189}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 30
@@ -183,7 +183,7 @@ MeshCollider:
   m_GameObject: {fileID: 3417187450308903732}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 30
@@ -277,7 +277,7 @@ MeshCollider:
   m_GameObject: {fileID: 3512227799180522376}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 30
@@ -371,7 +371,7 @@ MeshCollider:
   m_GameObject: {fileID: 4751805161619932482}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 30
@@ -559,7 +559,7 @@ MeshCollider:
   m_GameObject: {fileID: 5731632369886852273}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 30
@@ -574,6 +574,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4907399542012527676}
   - component: {fileID: 3847422101123975455}
+  - component: {fileID: 1745383187}
+  - component: {fileID: 1745383185}
+  - component: {fileID: 1745383186}
   m_Layer: 0
   m_Name: Heavy
   m_TagString: Untagged
@@ -619,6 +622,49 @@ MonoBehaviour:
   range: 100
   timeBetweenBullets: 0.2
   muzzleFlash: {fileID: 1640614663395974134}
+  bulletImpactEffect: {fileID: 5319669998689621603, guid: 0f817991c9a7b4fbdbe4bf9062a2683e,
+    type: 3}
+--- !u!54 &1745383187
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8233086147165992495}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1745383185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8233086147165992495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03508475, y: 0.06268279, z: 0.19287835}
+  m_Center: {x: -0.0013619598, y: 0.010910382, z: -0.0003943886}
+--- !u!114 &1745383186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8233086147165992495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f6582a28ce248388b2e2c0e723cd29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9019223859661747676
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,7 +724,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 500
+  far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5

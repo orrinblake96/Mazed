@@ -8,21 +8,22 @@ namespace Managers
     public class TimeManager : MonoBehaviour
     {
 
-        private TextMeshProUGUI timerMinutes;
-        private TextMeshProUGUI timerSeconds;
-        private TextMeshProUGUI timerSeconds100;
+        private TextMeshProUGUI _timerMinutes;
+        private TextMeshProUGUI _timerSeconds;
+        private TextMeshProUGUI _timerSeconds100;
 
-        private float startTime;
-        private float stopTime;
-        private float timerTime;
-        private bool isRunning = false;
-        
+        private float _startTime;
+        private float _stopTime;
+        private float _timerTime;
+        private bool _isRunning = false;
+        private float _timeToReduce = 0;
+
         // Start is called before the first frame update
         private void Start()
         {
-            timerMinutes = GameObject.Find("UI/TimerCanvas/Minutes").GetComponent<TextMeshProUGUI>();
-            timerSeconds = GameObject.Find("UI/TimerCanvas/Seconds").GetComponent<TextMeshProUGUI>();
-            timerSeconds100 = GameObject.Find("UI/TimerCanvas/SecondsHundred").GetComponent<TextMeshProUGUI>();
+            _timerMinutes = GameObject.Find("UI/TimerCanvas/Minutes").GetComponent<TextMeshProUGUI>();
+            _timerSeconds = GameObject.Find("UI/TimerCanvas/Seconds").GetComponent<TextMeshProUGUI>();
+            _timerSeconds100 = GameObject.Find("UI/TimerCanvas/SecondsHundred").GetComponent<TextMeshProUGUI>();
 
             TimerReset();
         }
@@ -30,7 +31,8 @@ namespace Managers
         // Update is called once per frame
         private void Update()
         {
-            timerTime = stopTime + (Time.time - startTime);
+            _timerTime = _stopTime + (Time.time - _startTime);
+            
 
             if (Input.GetKeyDown(KeyCode.H))
             {
@@ -50,43 +52,50 @@ namespace Managers
 
         private void LateUpdate()
         {
-            int minutesInt = (int)timerTime / 60;
-            int secondsInt = (int)timerTime % 60;
-            int seconds100Int = (int)(Mathf.Floor((timerTime - (secondsInt + minutesInt * 60)) * 100));
+            int minutesInt = (int)_timerTime / 60;
+            int secondsInt = (int)_timerTime % 60;
+            int seconds100Int = (int)(Mathf.Floor((_timerTime - (secondsInt + minutesInt * 60)) * 100));
             
-            if (isRunning)
+            if (_isRunning)
             {
-                timerMinutes.text = (minutesInt < 10) ? "0" + minutesInt : minutesInt.ToString();
-                timerSeconds.text = (secondsInt < 10) ? "0" + secondsInt : secondsInt.ToString();
-                timerSeconds100.text = (seconds100Int < 10) ? "0" + seconds100Int : seconds100Int.ToString();
+                _timerMinutes.text = (minutesInt < 10) ? "0" + minutesInt : minutesInt.ToString();
+                _timerSeconds.text = (secondsInt < 10) ? "0" + secondsInt : secondsInt.ToString();
+                _timerSeconds100.text = (seconds100Int < 10) ? "0" + seconds100Int : seconds100Int.ToString();
             }
         }
 
 
         public void TimerStart() {
-            if (!isRunning) {
+            if (!_isRunning) {
                 print("START");
-                isRunning = true;
-                startTime = Time.time;       
+                _isRunning = true;
+                _startTime = Time.time;       
             }
         }
 
         public void TimerStop()
         {
-            if (isRunning)
+            if (_isRunning)
             {
                 print("STOP");
-                isRunning = false;
-                stopTime = timerTime;
+                _isRunning = false;
+                _stopTime = _timerTime - _timeToReduce;
             }
         }
 
         public void TimerReset()
         {
             print("RESET");
-            stopTime = 0;
-            isRunning = false;
-            timerMinutes.text = timerSeconds.text = timerSeconds100.text = "00";
+            _stopTime = 0;
+            _isRunning = false;
+            _timerMinutes.text = _timerSeconds.text = _timerSeconds100.text = "00";
+        }
+
+        public void TimerReduced(GameObject timeReducer)
+        {
+            _timeToReduce += 3;
+            Debug.Log("Time reduced: " + _timeToReduce);
+            Destroy(timeReducer);
         }
     }
 }
