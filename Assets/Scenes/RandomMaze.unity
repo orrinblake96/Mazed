@@ -418,8 +418,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668120700}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -8.564028, y: -5.7279997, z: -15.775}
-  m_LocalScale: {x: 30, y: 21.097498, z: 2}
+  m_LocalPosition: {x: -8.564028, y: -5.73, z: 7.61}
+  m_LocalScale: {x: 39.13563, y: 78.86171, z: 2}
   m_Children: []
   m_Father: {fileID: 1477574212}
   m_RootOrder: 1
@@ -1183,6 +1183,82 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 405e2665d64424b5fb23d545971a69f2, type: 3}
+--- !u!1 &1287737990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1287737992}
+  - component: {fileID: 1287737991}
+  - component: {fileID: 1287737993}
+  m_Layer: 0
+  m_Name: Outerwalls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1287737991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287737990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7757de725f343e4bba6b3a46695443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walls:
+  - {fileID: -927199367670048503, guid: 47da2b13d010b4a42909ec2b7d124826, type: 3}
+  - {fileID: -927199367670048503, guid: 04d68fb6d516943fca682d6211b9b8b7, type: 3}
+  wallWidth: 41
+  mapHeight: 80
+  spacing: 1
+--- !u!4 &1287737992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287737990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1287737993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287737990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50471783b92154bf588d8a75b36fa4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildings:
+  - {fileID: 4351020587270184948, guid: a5bc9c68b6d707a49b7da8448a7df0b9, type: 3}
+  - {fileID: 716963268319577979, guid: e83422d6ff77a4047900bc557603998d, type: 3}
+  - {fileID: 4818776981006597471, guid: af4499952f2bfda4bad4143b11e4ed34, type: 3}
+  - {fileID: 2504711426964828708, guid: 3b7bfb560cd0e784fa0b60d32eb2e6e8, type: 3}
+  - {fileID: 3926882156761919857, guid: cd43e909ccf30334cac8ca3dcc9215a7, type: 3}
+  - {fileID: 6863962272776042647, guid: fd02965eada2cd64bb903dd8667c16b4, type: 3}
+  - {fileID: 1031796327752255508, guid: 72345996e3f131242a3f2729a8b045f1, type: 3}
+  - {fileID: 2304764009276277091, guid: dae9001bcf2d6fe4eb865c4db80314f0, type: 3}
+  - {fileID: 8039974926086720977, guid: 43b66af4dcdf2824aac086910ebc3f76, type: 3}
+  - {fileID: 4371209548955048780, guid: 0e514d52fa2e9ed43a9ef8d3b871a8af, type: 3}
+  wallWidth: 110
+  mapHeight: 100
+  spacing: 30
 --- !u!1 &1371571148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2137,14 +2213,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658792845}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.42, y: -5.7, z: -9.71}
-  m_LocalScale: {x: 0.187428, y: 0.62290096, z: 0.147928}
+  m_LocalRotation: {x: -0.28386718, y: 1.1192418e-16, z: -0.000000033839598, w: 0.9588636}
+  m_LocalPosition: {x: -8.42, y: -5.95, z: -9.31}
+  m_LocalScale: {x: 0.6199743, y: 1.4330305, z: 0.48931625}
   m_Children:
   - {fileID: 819599426}
   m_Father: {fileID: 1477574212}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -32.982002, y: 0, z: 0}
 --- !u!1 &1765852534
 GameObject:
   m_ObjectHideFlags: 0
