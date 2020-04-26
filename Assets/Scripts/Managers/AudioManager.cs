@@ -34,6 +34,8 @@ namespace Managers
                 s.source.pitch = s.pitch;
                 s.source.loop = s.loop;
             }
+            
+            Play("ScifiThemeMusic");
         }
 
         public void Play (string name)

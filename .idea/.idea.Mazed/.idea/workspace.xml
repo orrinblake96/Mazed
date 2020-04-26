@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9786cb-54d7-495c-a179-01ec3a733754" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/City/Block.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/City/Block.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/Materials/PinkUnlit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SampleScenes/Materials/PinkUnlit.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +41,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Utility/ForcedReset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InsideMazeTeleporter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeCell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -72,11 +71,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DayNightController.cs" />
         <option value="$PROJECT_DIR$/Assets/48 Particle Effect Pack/Script/csShowAllEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InsideMazeTeleporter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/InsideMazeTeleporter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TimeReducerLoactions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/BuildingProfile.cs" />
@@ -86,6 +83,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/OuterwallsBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/CityBuildingsBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" />
       </list>
     </option>
   </component>
@@ -150,6 +150,7 @@
       <workItem from="1587490866613" duration="6693000" />
       <workItem from="1587575366027" duration="2859000" />
       <workItem from="1587728838160" duration="5661000" />
+      <workItem from="1587929369409" duration="1766000" />
     </task>
     <servers />
   </component>
