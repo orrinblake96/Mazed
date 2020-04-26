@@ -18,7 +18,7 @@ public class MazeNumber : MonoBehaviour
 
     private void Update()
     {
-        if(mazeNumber == 10) _gameOver = true;
+        if(mazeNumber == 5) _gameOver = true;
         if (_gameOver)
         {
             StartCoroutine(GameOver());

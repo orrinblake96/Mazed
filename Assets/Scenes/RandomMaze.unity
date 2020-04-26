@@ -301,21 +301,27 @@ MonoBehaviour:
   sounds:
   - name: ButtonPress
     clip: {fileID: 8300000, guid: 4e5c420e798fc441f9b17098b1273a2e, type: 3}
-    volume: 0.3
+    volume: 0.9
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: GunShot
     clip: {fileID: 8300000, guid: 2d8fe6c61d1464c67b3488b64c61543f, type: 3}
-    volume: 0.3
+    volume: 0.9
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Teleport
     clip: {fileID: 8300000, guid: 8b376e34c7e4243809730056ac675aec, type: 3}
-    volume: 0.25
+    volume: 0.9
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: ScifiThemeMusic
+    clip: {fileID: 8300000, guid: 6de0f2e45c64c464bac0683e7a7c47ef, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
 --- !u!4 &379214021
 Transform:
@@ -329,7 +335,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &668120700
 GameObject:
@@ -2068,7 +2074,7 @@ PrefabInstance:
     - target: {fileID: 4188947011904668378, guid: 3a1079add9f494a0fbf303b6b82e404f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4188947011904668378, guid: 3a1079add9f494a0fbf303b6b82e404f,
         type: 3}
