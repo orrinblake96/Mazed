@@ -65,9 +65,10 @@ namespace Managers
         }
 
 
-        public void TimerStart() {
-            if (!_isRunning) {
-                print("START");
+        public void TimerStart()
+        {
+            if (!_isRunning)
+            {
                 _isRunning = true;
                 _startTime = Time.time;       
             }
@@ -77,7 +78,6 @@ namespace Managers
         {
             if (_isRunning)
             {
-                print("STOP");
                 _isRunning = false;
                 _stopTime = _timerTime - _timeToReduce;
             }
@@ -85,7 +85,6 @@ namespace Managers
 
         public void TimerReset()
         {
-            print("RESET");
             _stopTime = 0;
             _isRunning = false;
             _timerMinutes.text = _timerSeconds.text = _timerSeconds100.text = "00";

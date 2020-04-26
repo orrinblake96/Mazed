@@ -82,6 +82,7 @@
             <e p="CityBuildingsBuilder.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="InsideMazeTeleporter.cs" t="Include" />
+            <e p="MazeNumber.cs" t="Include" />
             <e p="OuterwallsBuilder.cs" t="Include" />
             <e p="Sounds.cs" t="Include" />
             <e p="TeleportIntoMaze.cs" t="Include" />

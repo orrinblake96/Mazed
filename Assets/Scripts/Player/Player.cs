@@ -1,20 +1,20 @@
-﻿using System;
-using Managers;
+﻿using Managers;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
         public Transform teleportingPadTarget;
         public GameManager gameManager;
-        
         public ParticleSystem teleporterParticleSystem;
-        
+
+        private MazeNumber _mazeNumber;
         private MazeCell _currentCell;
 
         private void Start()
         {
             teleportingPadTarget = GameObject.Find("Enviroment/TeleportingPad").GetComponent<Transform>();
             gameManager = GameObject.Find("Enviroment/ButtonTower/Button").GetComponent<GameManager>();
+            _mazeNumber = GameObject.Find("MazeNumber/Maze").GetComponent<MazeNumber>();
 //            teleporterParticleSystem = GameObject.Find("TeleporterPS").GetComponent<ParticleSystem>();
         }
 
@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("Teleport");
                 other.gameObject.transform.position = teleportingPadTarget.transform.position + (Vector3.up/2);
                 other.gameObject.transform.rotation = teleportingPadTarget.transform.rotation;
+                _mazeNumber.mazeNumber++;
+                _mazeNumber.UpdateMazeNumber();
                 gameManager.RestartAfterReward();
             }
         }
