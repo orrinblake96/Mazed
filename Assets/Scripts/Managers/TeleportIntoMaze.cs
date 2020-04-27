@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 namespace Managers
@@ -10,21 +11,25 @@ namespace Managers
         private void Start()
         {
             _mazeNumber = GameObject.Find("MazeNumber/Maze").GetComponent<MazeNumber>();
+            Debug.Log(_mazeNumber.mazeNumber);
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.CompareTag("Player") && _mazeNumber.mazeNumber != 5)
+            if (other.gameObject.CompareTag("Player"))
             {
-                FindObjectOfType<AudioManager>().Play("Teleport");
-                other.gameObject.transform.position = GameObject.Find("InsideMazeTeleporter(Clone)").GetComponent<Transform>().position;
-                gameObject.SetActive(false);
-            }
-            else
-            {
-                FindObjectOfType<AudioManager>().Play("Teleport");
-                Debug.Log("here");
-                gameObject.SetActive(false);
+                if (_mazeNumber.mazeNumber == 5)
+                {
+                    FindObjectOfType<AudioManager>().Play("Teleport");
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
+                else
+                {
+                    FindObjectOfType<AudioManager>().Play("Teleport");
+                    other.gameObject.transform.position = GameObject.Find("InsideMazeTeleporter(Clone)")
+                        .GetComponent<Transform>().position;
+                    gameObject.SetActive(false);
+                }
             }
         }
     }
