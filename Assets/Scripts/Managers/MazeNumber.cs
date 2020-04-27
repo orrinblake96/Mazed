@@ -6,6 +6,7 @@ using UnityEngine;
 public class MazeNumber : MonoBehaviour
 {
     public int mazeNumber;
+    public GameObject fireworks;
 
     private bool _gameOver = false;    
     private TextMeshProUGUI _mazeNumberText;
@@ -34,6 +35,7 @@ public class MazeNumber : MonoBehaviour
     private IEnumerator GameOver()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        fireworks.SetActive(true);
+//        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

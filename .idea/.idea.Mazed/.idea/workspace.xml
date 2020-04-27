@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9786cb-54d7-495c-a179-01ec3a733754" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VFXGraphs/Fireworks.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFXGraphs/Fireworks.vfx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +70,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Button/CreateMazeButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Maze.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Sounds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DayNightController.cs" />
         <option value="$PROJECT_DIR$/Assets/48 Particle Effect Pack/Script/csShowAllEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InsideMazeTeleporter.cs" />
@@ -85,6 +86,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/CityBuildingsBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" />
       </list>
     </option>
@@ -150,7 +152,7 @@
       <workItem from="1587490866613" duration="6693000" />
       <workItem from="1587575366027" duration="2859000" />
       <workItem from="1587728838160" duration="5661000" />
-      <workItem from="1587929369409" duration="1766000" />
+      <workItem from="1587929369409" duration="2799000" />
     </task>
     <servers />
   </component>
