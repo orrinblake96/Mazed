@@ -25,7 +25,7 @@ public class MazeNumber : MonoBehaviour
 
     private void Update()
     {
-        if (mazeNumber == 5)
+        if (mazeNumber == 1)
         {
             _gameOver = true;
         }
@@ -40,7 +40,7 @@ public class MazeNumber : MonoBehaviour
     {
         _mazeNumberText.text = "Maze: " + mazeNumber;
 
-        if (mazeNumber != 5) return;
+        if (mazeNumber != 1) return;
         _audioSource.clip = celebrationClip;
         _audioSource.Play();
         teleportingPad.SetActive(true);

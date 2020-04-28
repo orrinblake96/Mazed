@@ -18,7 +18,7 @@ namespace Managers
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                if (_mazeNumber.mazeNumber == 5)
+                if (_mazeNumber.mazeNumber == 1)
                 {
                     FindObjectOfType<AudioManager>().Play("Teleport");
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
