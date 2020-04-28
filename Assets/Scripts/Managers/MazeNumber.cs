@@ -7,6 +7,7 @@ public class MazeNumber : MonoBehaviour
 {
     public int mazeNumber;
     public GameObject fireworks;
+    public GameObject smoke;
     public GameObject buttonTower;
     public GameObject teleportingPad;
     public AudioClip celebrationClip;
@@ -51,6 +52,7 @@ public class MazeNumber : MonoBehaviour
         buttonTower.SetActive(false);
         yield return new WaitForSeconds(.5f);
         fireworks.SetActive(true);
+        smoke.SetActive(true);
 //        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
