@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/RandomMaze.unity
+    guid: e9c972eed31844c21ad931fa3bfafbb6
   m_configObjects: {}

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 namespace Managers
@@ -24,7 +25,7 @@ namespace Managers
                 return;
             }
         
-            DontDestroyOnLoad(gameObject);
+//            DontDestroyOnLoad(gameObject);
         
             foreach (Sounds s in sounds)
             {
@@ -34,8 +35,8 @@ namespace Managers
                 s.source.pitch = s.pitch;
                 s.source.loop = s.loop;
             }
-            
-            Play("ScifiThemeMusic");
+
+            StartCoroutine(WelcomeToTheMaze());
         }
 
         public void Play (string name)
@@ -58,6 +59,12 @@ namespace Managers
                 return;
             }
             s.source.Stop();
+        }
+
+        IEnumerator WelcomeToTheMaze()
+        {
+            yield return new WaitForSeconds(1f);
+            Play("WelcomeMaze");
         }
     }
 }
