@@ -66,6 +66,7 @@ namespace Managers
                 _timerSeconds.text = (secondsInt < 10) ? "0" + secondsInt : secondsInt.ToString();
                 _timerSeconds100.text = (seconds100Int < 10) ? "0" + seconds100Int : seconds100Int.ToString();
             }
+            
         }
 
 

@@ -4,11 +4,9 @@
     <list default="true" id="0b9786cb-54d7-495c-a179-01ec3a733754" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,12 +83,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/OuterwallsBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/CityBuildingsBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" />
       </list>
     </option>
   </component>
@@ -157,7 +155,7 @@
       <workItem from="1587728838160" duration="5661000" />
       <workItem from="1587929369409" duration="5737000" />
       <workItem from="1588100123540" duration="1064000" />
-      <workItem from="1588422520254" duration="3080000" />
+      <workItem from="1588422520254" duration="7114000" />
     </task>
     <servers />
   </component>
