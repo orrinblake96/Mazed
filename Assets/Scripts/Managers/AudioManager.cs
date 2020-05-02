@@ -25,7 +25,7 @@ namespace Managers
                 return;
             }
         
-            DontDestroyOnLoad(gameObject);
+//            DontDestroyOnLoad(gameObject);
         
             foreach (Sounds s in sounds)
             {

@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: dc40e5dc8f6ba489eb65d97f58686a51,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -526,7 +527,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: NoEscape
-    clip: {fileID: 8300000, guid: 9fa9593580fb8448eb16b2ffffe3f94a, type: 3}
+    clip: {fileID: 8300000, guid: f49c258fd32164ed0a0340d668a1d40a, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -724,7 +725,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 19ae0c9ea567f4b9abf86fa57ec19b8a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -887,7 +888,7 @@ MonoBehaviour:
     type: 3}
   teleporterPrefab: {fileID: 945467432304614020, guid: 03e40dda9c6e64c3890863eb8f7a5a17,
     type: 3}
-  timeReducerPrefab: {fileID: 2006934710734386080, guid: 37abd9b777869435cbb56e2f83ccce12,
+  timeReducerPrefab: {fileID: 2006934710734386080, guid: c64024aacb17548098fa94184e6e1aa6,
     type: 3}
   buttonPressedAnimation: {fileID: 819599432}
   startingTeleporter: {fileID: 876886771}
@@ -1395,7 +1396,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6de0f2e45c64c464bac0683e7a7c47ef, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0

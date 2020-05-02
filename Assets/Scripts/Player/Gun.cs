@@ -1,6 +1,7 @@
 ﻿using System;
 using Managers;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Gun : MonoBehaviour
 {
@@ -32,6 +33,12 @@ public class Gun : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("GunShot");
             muzzleFlash.Play();
             Shoot();
+        }
+        
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            // Effects for the gun
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

@@ -34,7 +34,7 @@ namespace Managers
             {
                 // If all mazes complete the teleporter will restart the game (NO ESCAPE)
                 // Else teleport player into the maze to continue the game
-                if (_mazeNumber.mazeNumber == 5)
+                if (_mazeNumber.mazeNumber == 1)
                 {
                     FindObjectOfType<AudioManager>().Play("Teleport");
                     _timerUi.SetActive(false);
@@ -65,13 +65,9 @@ namespace Managers
 
         private IEnumerator NoEscapeVoiceOver()
         {
-            yield return new WaitForSeconds(2f);
-            FindObjectOfType<AudioManager>().Play("HumanEscape");
-            yield return new WaitForSeconds(5f);
-            FindObjectOfType<AudioManager>().Play("RepeatForEver");
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(1f);
             FindObjectOfType<AudioManager>().Play("NoEscape");
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(12f);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

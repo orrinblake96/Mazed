@@ -29,7 +29,7 @@ public class MazeNumber : MonoBehaviour
     private void Update()
     {
         //if all 5 mazes have been completed then the game is over
-        if (mazeNumber == 5)
+        if (mazeNumber == 1)
         {
             _gameOver = true;
         }
@@ -46,7 +46,7 @@ public class MazeNumber : MonoBehaviour
         _mazeNumberText.text = "Maze: " + mazeNumber;
 
         //play celebration music and activate the teleportation pad
-        if (mazeNumber != 5) return;
+        if (mazeNumber != 1) return;
         _audioSource.clip = celebrationClip;
         _audioSource.Play();
         teleportingPad.SetActive(true);
