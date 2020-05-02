@@ -6,7 +6,7 @@ using UnityEngine;
 public class MazeNumber : MonoBehaviour
 {
     public int mazeNumber;
-    public GameObject fireworks;
+//    public GameObject fireworks;
     public GameObject smoke;
     public GameObject buttonTower;
     public GameObject teleportingPad;
@@ -59,7 +59,7 @@ public class MazeNumber : MonoBehaviour
         buttonTower.SetActive(false);
         _gameOverAnim.SetTrigger("GameOver");
         yield return new WaitForSeconds(.5f);
-        fireworks.SetActive(true);
+//        fireworks.SetActive(true);
         smoke.SetActive(true);
     }
 }
