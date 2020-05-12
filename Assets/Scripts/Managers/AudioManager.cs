@@ -8,6 +8,7 @@ namespace Managers
     {
         public Sounds[] sounds;
         public static AudioManager Instance;
+        public bool welcomeMessageFinished = false;
 
         private string _currentSceneName;
     
@@ -65,6 +66,8 @@ namespace Managers
         {
             yield return new WaitForSeconds(1f);
             Play("WelcomeMaze");
+            yield return new WaitForSeconds(6f);
+            welcomeMessageFinished = true;
         }
     }
 }

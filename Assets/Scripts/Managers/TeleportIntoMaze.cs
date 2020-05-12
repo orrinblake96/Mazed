@@ -25,7 +25,6 @@ namespace Managers
             _crossHairUi = GameObject.Find("CrossHairCanvas");
             _fpsController = GameObject.Find("FPSController").GetComponent<FirstPersonController>();
             _gunScript = GameObject.Find("Heavy").GetComponent<Gun>();
-            Debug.Log(_mazeNumber.mazeNumber);
         }
 
         private void OnTriggerEnter(Collider other)

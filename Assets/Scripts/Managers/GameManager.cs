@@ -33,7 +33,7 @@ namespace Managers
         private void Update()
         {
             // Prompts player to press "E" to generate mazes
-            if (Input.GetKeyDown(KeyCode.E) && _readyToGenerate)
+            if (Input.GetKeyDown(KeyCode.E) && _readyToGenerate && FindObjectOfType<AudioManager>().welcomeMessageFinished)
             {
                 // Creates teleporter/effects to enter the maze
                 startingTeleporter.SetActive(true);

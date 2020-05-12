@@ -8,6 +8,7 @@ public class MazeNumber : MonoBehaviour
     public int mazeNumber;
 //    public GameObject fireworks;
     public GameObject smoke;
+    public GameObject fireworks;
     public GameObject buttonTower;
     public GameObject teleportingPad;
     public AudioClip celebrationClip;
@@ -59,7 +60,7 @@ public class MazeNumber : MonoBehaviour
         buttonTower.SetActive(false);
         _gameOverAnim.SetTrigger("GameOver");
         yield return new WaitForSeconds(.5f);
-//        fireworks.SetActive(true);
+        fireworks.SetActive(true);
         smoke.SetActive(true);
     }
 }
