@@ -58,6 +58,7 @@
             <e p="MazeNumber.cs" t="Include" />
             <e p="OuterwallsBuilder.cs" t="Include" />
             <e p="Sounds.cs" t="Include" />
+            <e p="StartMenuManager.cs" t="Include" />
             <e p="TeleportIntoMaze.cs" t="Include" />
             <e p="TimeManager.cs" t="Include" />
             <e p="TimeReducerLoactions.cs" t="Include" />
