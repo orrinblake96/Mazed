@@ -122,10 +122,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbfaed2e6f934408a81e7eadf0924125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 1
-  bulletForce: 100
   bulletPrefab: {fileID: 3095432069035773657, guid: 46ac8527a9fcf482ebe203ed443a2281,
     type: 3}
+  gunInterval: 2
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!65 &1866028632388187196
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -137,7 +139,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 50, y: 5, z: 50}
+  m_Size: {x: 75, y: 5, z: 75}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &65214371379741146
 PrefabInstance:

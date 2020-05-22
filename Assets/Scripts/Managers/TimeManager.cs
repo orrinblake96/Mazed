@@ -68,15 +68,15 @@ namespace Managers
                 _timerSeconds100.text = (seconds100Int < 10) ? "0" + seconds100Int : seconds100Int.ToString();
             }
 
-            if (minutesInt < 2)
+            if (minutesInt <= 2)
             {
                 _timerMinutes.color = _timerSeconds.color = _timerSeconds100.color = Color.green;
             } 
-            else if (minutesInt >= 2 && minutesInt < 4)
+            else if (minutesInt > 2 && minutesInt <= 4)
             {
                 _timerMinutes.color = _timerSeconds.color = _timerSeconds100.color = Color.yellow;
             }
-            else
+            else if(minutesInt > 4)
             {
                 _timerMinutes.color = _timerSeconds.color = _timerSeconds100.color = Color.red;
             }
@@ -99,6 +99,7 @@ namespace Managers
             if (_isRunning)
             {
                 _timeToReduce = 0;
+                _timeToIncrease = 0;
                 _isRunning = false;
                 _stopTime = _timerTime;
             }
@@ -119,7 +120,7 @@ namespace Managers
         public void TimerReduced(GameObject timeReducer)
         {
             // Update time to be reduced & destroy prefab in scene
-            _timeToReduce += 3;
+            _timeToReduce += 5;
             Destroy(timeReducer);
             FindObjectOfType<AudioManager>().Play("TimeReduced");
         }
@@ -127,7 +128,7 @@ namespace Managers
         public void TimerIncreased()
         {
             // Update time to be reduced & destroy prefab in scene
-            _timeToIncrease += 3;
+            _timeToIncrease += 10;
         }
     }
 }

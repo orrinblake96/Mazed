@@ -4,14 +4,11 @@
     <list default="true" id="0b9786cb-54d7-495c-a179-01ec3a733754" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeFloor/MazeCell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MazeFloor/MazeCell.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeItems/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MazeItems/Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeItems/TimeReducer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MazeItems/TimeReducer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Bullet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SunControl.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SunControl.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/digital-7 (mono) SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/digital-7 (mono) SDF.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,9 +92,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/StartMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyNavMesh.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EnemyAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EnemyAttack.cs" />
       </list>
     </option>
   </component>
@@ -168,7 +165,7 @@
       <workItem from="1589287495159" duration="2906000" />
       <workItem from="1589652541380" duration="1722000" />
       <workItem from="1590070179659" duration="4037000" />
-      <workItem from="1590145721683" duration="3291000" />
+      <workItem from="1590145721683" duration="4430000" />
     </task>
     <servers />
   </component>
