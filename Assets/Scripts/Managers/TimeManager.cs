@@ -7,6 +7,7 @@ namespace Managers
 {
     public class TimeManager : MonoBehaviour
     {
+        public GameObject _trailRenderer;
 
         private TextMeshProUGUI _timerMinutes;
         private TextMeshProUGUI _timerSeconds;
@@ -88,6 +89,7 @@ namespace Managers
         {
             if (!_isRunning)
             {
+                _trailRenderer.SetActive(true);
                 _isRunning = true;
                 _startTime = Time.time;       
             }
@@ -98,6 +100,7 @@ namespace Managers
         {
             if (_isRunning)
             {
+                _trailRenderer.SetActive(false);
                 _timeToReduce = 0;
                 _timeToIncrease = 0;
                 _isRunning = false;
