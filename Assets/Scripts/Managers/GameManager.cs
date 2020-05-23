@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Managers
 {
@@ -13,7 +14,7 @@ namespace Managers
         public TimeReducerLoactions timeReducerPrefab;
         public Animator buttonPressedAnimation;
         public GameObject startingTeleporter;
-
+        
         private Maze _mazeInstance;
         private bool _readyToGenerate;
         private Player _rewardInstance;

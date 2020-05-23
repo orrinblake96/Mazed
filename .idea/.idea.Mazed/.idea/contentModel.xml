@@ -28,6 +28,24 @@
             </e>
           </e>
         </e>
+        <e p="NavMeshComponents" t="Include">
+          <e p="Editor" t="Include">
+            <e p="NavMeshAssetManager.cs" t="Include" />
+            <e p="NavMeshComponentsEditor.asmdef" t="Include" />
+            <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
+            <e p="NavMeshLinkEditor.cs" t="Include" />
+            <e p="NavMeshModifierEditor.cs" t="Include" />
+            <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
+            <e p="NavMeshSurfaceEditor.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="NavMeshComponents.asmdef" t="Include" />
+            <e p="NavMeshLink.cs" t="Include" />
+            <e p="NavMeshModifier.cs" t="Include" />
+            <e p="NavMeshModifierVolume.cs" t="Include" />
+            <e p="NavMeshSurface.cs" t="Include" />
+          </e>
+        </e>
         <e p="SampleScenes" t="Include">
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
@@ -49,10 +67,15 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="DayNightController.cs" t="Include" />
+          <e p="Enemies" t="Include">
+            <e p="EnemyNavMesh.cs" t="Include" />
+          </e>
           <e p="IntVector2.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="AudioManager.cs" t="Include" />
+            <e p="Bullet.cs" t="Include" />
             <e p="CityBuildingsBuilder.cs" t="Include" />
+            <e p="EnemyAttack.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="InsideMazeTeleporter.cs" t="Include" />
             <e p="MazeNumber.cs" t="Include" />
@@ -76,7 +99,9 @@
             <e p="Gun.cs" t="Include" />
             <e p="Player.cs" t="Include" />
           </e>
-          <e p="SunControl.cs" t="Include" />
+          <e p="Shop" t="Include">
+            <e p="ItemShop.cs" t="Include" />
+          </e>
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
@@ -349,6 +374,8 @@
         </e>
       </e>
       <e p="Mazed.sln" t="IncludeFlat" />
+      <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
+      <e p="NavMeshComponentsEditor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp/bin" t="ExcludeRecursive" />

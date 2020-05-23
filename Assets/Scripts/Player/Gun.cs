@@ -57,9 +57,9 @@ public class Gun : MonoBehaviour
             
             // If time reducing object is hit then call function
             if(hit.transform.name == "TimeReducer(Clone)") _timeManager.TimerReduced(hit.transform.gameObject);
-            
+
             // Destroy bullets to clean up scene
-            Destroy(impactBulletGameObject, 2f);
+            Destroy(impactBulletGameObject, 1.5f);
         }
     }
 

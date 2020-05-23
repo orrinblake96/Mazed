@@ -13,8 +13,10 @@ GameObject:
   - component: {fileID: 3394179563323657419}
   - component: {fileID: 3394179563323657418}
   - component: {fileID: 2006934710734386080}
+  - component: {fileID: 3157898553616417871}
+  - component: {fileID: 1866028632388187196}
   m_Layer: 0
-  m_Name: TimeReducer1
+  m_Name: TimeReducer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +94,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.3
+  m_Radius: 1.12
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -108,6 +110,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00000b069f08e4e9c9640b4192fb0a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3157898553616417871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3394179563323657417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbfaed2e6f934408a81e7eadf0924125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 3095432069035773657, guid: 46ac8527a9fcf482ebe203ed443a2281,
+    type: 3}
+  gunInterval: 2
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!65 &1866028632388187196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3394179563323657417}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 75, y: 5, z: 75}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &65214371379741146
 PrefabInstance:
   m_ObjectHideFlags: 0
