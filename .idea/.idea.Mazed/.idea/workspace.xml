@@ -5,8 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +21,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop/ItemShop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/OuterwallsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazeRoomSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DayNightController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -31,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/CityBuildingsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Sounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/StartMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MazePassage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -83,16 +87,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/OuterwallsBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/CityBuildingsBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/StartMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyNavMesh.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EnemyAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ItemShop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" />
       </list>
     </option>
   </component>
@@ -163,7 +168,8 @@
       <workItem from="1589287495159" duration="2906000" />
       <workItem from="1589652541380" duration="1722000" />
       <workItem from="1590070179659" duration="4037000" />
-      <workItem from="1590145721683" duration="6222000" />
+      <workItem from="1590145721683" duration="6419000" />
+      <workItem from="1590231756067" duration="4237000" />
     </task>
     <servers />
   </component>

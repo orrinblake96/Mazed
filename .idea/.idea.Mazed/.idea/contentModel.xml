@@ -99,6 +99,9 @@
             <e p="Gun.cs" t="Include" />
             <e p="Player.cs" t="Include" />
           </e>
+          <e p="Shop" t="Include">
+            <e p="ItemShop.cs" t="Include" />
+          </e>
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">

@@ -33,7 +33,7 @@ namespace Managers
             {
                 // If all mazes complete the teleporter will restart the game (NO ESCAPE)
                 // Else teleport player into the maze to continue the game
-                if (_mazeNumber.mazeNumber == 1)
+                if (_mazeNumber.mazeNumber == 5)
                 {
                     FindObjectOfType<AudioManager>().Play("Teleport");
                     _timerUi.SetActive(false);

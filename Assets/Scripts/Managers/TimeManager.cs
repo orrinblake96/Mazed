@@ -7,7 +7,7 @@ namespace Managers
 {
     public class TimeManager : MonoBehaviour
     {
-        public GameObject _trailRenderer;
+        public GameObject trailRenderer;
 
         private TextMeshProUGUI _timerMinutes;
         private TextMeshProUGUI _timerSeconds;
@@ -19,10 +19,13 @@ namespace Managers
         private bool _isRunning = false;
         private float _timeToReduce = 0f;
         private float _timeToIncrease = 0f;
+        private float _timeToIncreaseTrailRenderer = 0f;
+        private AudioManager _audioManager;
 
         // Start is called before the first frame update
         private void Start()
         {
+            _audioManager = FindObjectOfType<AudioManager>();
             _timerMinutes = GameObject.Find("UI/TimerCanvas/Minutes").GetComponent<TextMeshProUGUI>();
             _timerSeconds = GameObject.Find("UI/TimerCanvas/Seconds").GetComponent<TextMeshProUGUI>();
             _timerSeconds100 = GameObject.Find("UI/TimerCanvas/SecondsHundred").GetComponent<TextMeshProUGUI>();
@@ -34,10 +37,10 @@ namespace Managers
         private void Update()
         {
             // updates timer to account for stopping time & reducing time
-            _timerTime = _stopTime + (Time.time - _startTime - _timeToReduce + _timeToIncrease);
+            _timerTime = _stopTime + (Time.time - _startTime - _timeToReduce + _timeToIncrease + _timeToIncreaseTrailRenderer);
             
-
             // Debug keys -- Take out before submission
+             /*
             if (Input.GetKeyDown(KeyCode.H))
             {
                 TimerStart();
@@ -51,6 +54,13 @@ namespace Managers
             if (Input.GetKeyDown(KeyCode.K))
             {
                 TimerReset();
+            }
+            */
+
+            if (_isRunning && Input.GetKeyDown(KeyCode.Q) && !trailRenderer.activeSelf)
+            {
+                trailRenderer.SetActive(true);
+                TimerIncreasedByTrailRender();
             }
         }
 
@@ -87,30 +97,27 @@ namespace Managers
         // Start timer and set time
         public void TimerStart()
         {
-            if (!_isRunning)
-            {
-                _trailRenderer.SetActive(true);
-                _isRunning = true;
-                _startTime = Time.time;       
-            }
+            if (_isRunning) return;
+            _isRunning = true;
+            _startTime = Time.time;
         }
 
         // Stop timer and prevent UI from updating
         public void TimerStop()
         {
-            if (_isRunning)
-            {
-                _trailRenderer.SetActive(false);
-                _timeToReduce = 0;
-                _timeToIncrease = 0;
-                _isRunning = false;
-                _stopTime = _timerTime;
-            }
+            if (!_isRunning) return;
+            trailRenderer.SetActive(false);
+            trailRenderer.GetComponent<TrailRenderer>().Clear();
+            _timeToReduce = 0;
+            _timeToIncrease = 0;
+            _timeToIncreaseTrailRenderer = 0;
+            _isRunning = false;
+            _stopTime = _timerTime;
         }
 
         // Used to reset time
         // Originally to be used in game but unused currently
-        public void TimerReset()
+        private void TimerReset()
         {
             _stopTime = 0;
             _isRunning = false;
@@ -125,13 +132,19 @@ namespace Managers
             // Update time to be reduced & destroy prefab in scene
             _timeToReduce += 5;
             Destroy(timeReducer);
-            FindObjectOfType<AudioManager>().Play("TimeReduced");
+            _audioManager.Play("TimeReduced");
         }
         
         public void TimerIncreased()
         {
-            // Update time to be reduced & destroy prefab in scene
+            // Update time to be increased
             _timeToIncrease += 10;
+        }
+        
+        private void TimerIncreasedByTrailRender()
+        {
+            // Update time to be increased when player uses a trail renderer
+            _timeToIncreaseTrailRenderer += 30;
         }
     }
 }
