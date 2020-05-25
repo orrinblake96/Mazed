@@ -1472,6 +1472,7 @@ MonoBehaviour:
     type: 3}
   buttonPressedAnimation: {fileID: 819599432}
   startingTeleporter: {fileID: 876886771}
+  generatedMaze: 0
 --- !u!135 &819599431
 SphereCollider:
   m_ObjectHideFlags: 0
