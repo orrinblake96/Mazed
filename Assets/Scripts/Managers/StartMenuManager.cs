@@ -27,6 +27,7 @@ namespace Managers
 
         IEnumerator NextLevel()
         {
+            // Allows smoother music to fade with animation
             yield return  new WaitForSeconds(1f);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

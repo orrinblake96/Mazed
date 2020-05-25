@@ -7,6 +7,8 @@ namespace Managers
     [System.Serializable]
     public class Sounds
     {
+        // Class is used by Audiomanager to give greater control over audio 
+        
         public String name;
         public AudioClip clip;
 

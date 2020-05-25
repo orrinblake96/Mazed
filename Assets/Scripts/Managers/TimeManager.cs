@@ -56,10 +56,13 @@ namespace Managers
                 TimerReset();
             }
             */
-
+            
+            // When player is in the maze they can activate the trail
             if (_isRunning && Input.GetKeyDown(KeyCode.Q) && !trailRenderer.activeSelf)
             {
                 trailRenderer.SetActive(true);
+                
+                //adds time penalty
                 TimerIncreasedByTrailRender();
             }
         }
@@ -78,16 +81,17 @@ namespace Managers
                 _timerSeconds.text = (secondsInt < 10) ? "0" + secondsInt : secondsInt.ToString();
                 _timerSeconds100.text = (seconds100Int < 10) ? "0" + seconds100Int : seconds100Int.ToString();
             }
-
-            if (minutesInt <= 2)
+            
+            // Changes colours of timer
+            if (minutesInt <= 3)
             {
                 _timerMinutes.color = _timerSeconds.color = _timerSeconds100.color = Color.green;
             } 
-            else if (minutesInt > 2 && minutesInt <= 4)
+            else if (minutesInt > 3 && minutesInt <= 5)
             {
                 _timerMinutes.color = _timerSeconds.color = _timerSeconds100.color = Color.yellow;
             }
-            else if(minutesInt > 4)
+            else if(minutesInt > 5)
             {
                 _timerMinutes.color = _timerSeconds.color = _timerSeconds100.color = Color.red;
             }
