@@ -38,24 +38,33 @@ namespace Managers
         {
             // updates timer to account for stopping time & reducing time
             _timerTime = _stopTime + (Time.time - _startTime - _timeToReduce + _timeToIncrease + _timeToIncreaseTrailRenderer);
+
+            if (_timerTime < 0)
+            {
+                Debug.Log(_timerTime);
+            }
             
             // Debug keys -- Take out before submission
-             /*
-            if (Input.GetKeyDown(KeyCode.H))
-            {
-                TimerStart();
-            }
-            
-            if (Input.GetKeyDown(KeyCode.J))
-            {
-                TimerStop();
-            }
-            
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                TimerReset();
-            }
-            */
+             
+//            if (Input.GetKeyDown(KeyCode.H))
+//            {
+//                TimerStart();
+//            }
+//            
+//            if (Input.GetKeyDown(KeyCode.J))
+//            {
+//                TimerStop();
+//            }
+//            
+//            if (Input.GetKeyDown(KeyCode.K))
+//            {
+//                TimerReset();
+//            }
+//            
+//            if (Input.GetKeyDown(KeyCode.L))
+//            {
+//                TimerReduced(null);
+//            }
             
             // When player is in the maze they can activate the trail
             if (_isRunning && Input.GetKeyDown(KeyCode.Q) && !trailRenderer.activeSelf)
@@ -134,7 +143,15 @@ namespace Managers
         public void TimerReduced(GameObject timeReducer)
         {
             // Update time to be reduced & destroy prefab in scene
-            _timeToReduce += 10;
+            if (_timerTime < 10)
+            {
+                _timeToReduce += Math.Abs(0 - _timerTime);
+            }
+            else
+            {
+                _timeToReduce += 10;
+            }
+            
             Destroy(timeReducer);
             _audioManager.Play("TimeReduced");
         }

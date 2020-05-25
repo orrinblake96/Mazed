@@ -11,6 +11,7 @@ public class MazeNumber : MonoBehaviour
     public GameObject fireworks;
     public GameObject buttonTower;
     public GameObject teleportingPad;
+    public GameObject instructionDesk;
     public AudioClip celebrationClip;
 
     private bool _gameOver = false;    
@@ -60,6 +61,7 @@ public class MazeNumber : MonoBehaviour
     private IEnumerator GameOver()
     {
         buttonTower.SetActive(false);
+        instructionDesk.SetActive(false);
         _gameOverAnim.SetTrigger("GameOver");
         yield return new WaitForSeconds(.5f);
         fireworks.SetActive(true);

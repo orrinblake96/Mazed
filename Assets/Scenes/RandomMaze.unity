@@ -339,6 +339,12 @@ CapsuleCollider:
   m_Height: 3.38
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &109161111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8712959941063211767, guid: 21ecfa0192e3c4141bc59fc73c77a7b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 849856454101074029}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &121747910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,6 +2077,7 @@ MonoBehaviour:
   fireworks: {fileID: 2065637935}
   buttonTower: {fileID: 1658792845}
   teleportingPad: {fileID: 876886771}
+  instructionDesk: {fileID: 109161111}
   celebrationClip: {fileID: 8300000, guid: 1c8a41a10018b43a8b09f0f3bfaa0b0b, type: 3}
 --- !u!114 &972193837
 MonoBehaviour:

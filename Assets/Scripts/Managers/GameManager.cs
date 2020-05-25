@@ -14,6 +14,7 @@ namespace Managers
         public TimeReducerLoactions timeReducerPrefab;
         public Animator buttonPressedAnimation;
         public GameObject startingTeleporter;
+        public bool generatedMaze;
         
         private Maze _mazeInstance;
         private bool _readyToGenerate;
@@ -34,9 +35,10 @@ namespace Managers
         private void Update()
         {
             // Prompts player to press "E" to generate mazes
-            if (Input.GetKeyDown(KeyCode.E) && _readyToGenerate && FindObjectOfType<AudioManager>().welcomeMessageFinished)
+            if (Input.GetKeyDown(KeyCode.E) && _readyToGenerate && FindObjectOfType<AudioManager>().welcomeMessageFinished && !generatedMaze)
             {
                 // Creates teleporter/effects to enter the maze
+                generatedMaze = true;
                 startingTeleporter.SetActive(true);
                 FindObjectOfType<AudioManager>().Play("ButtonPress");
                 buttonPressedAnimation.SetTrigger(ButtonPressed);
@@ -104,6 +106,7 @@ namespace Managers
         private void OnTriggerEnter(Collider other)
         {
             // Alloow player to generate maze by pressing the button
+            if (generatedMaze) return;
             _readyToGenerate = true;
             GameObject.Find("ButtonPressCanvas/PressButtonText").GetComponent<Text>().enabled = true;
         }
@@ -139,6 +142,8 @@ namespace Managers
                 Destroy(_mazeTeleporterInstance.gameObject);
             }
             _mazeInstance = Instantiate(mazePrefab) as Maze;
+
+            generatedMaze = false;
         }
     }
 }

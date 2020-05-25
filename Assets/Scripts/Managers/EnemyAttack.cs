@@ -30,7 +30,6 @@ namespace Managers
                 // shoot a raycast and see if the player is hit
                 if (Physics.Raycast(transform.position, transform.forward, out hit, 20f, raycastMask))
                 {
-                    Debug.Log(hit.collider.name);
                     if (hit.collider.CompareTag("Player") && _gunTimer<0.0f)
                     {
                         Instantiate(bulletPrefab, transform.position, Quaternion.identity);
