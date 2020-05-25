@@ -33,14 +33,17 @@ namespace Managers
             {
                 // If all mazes complete the teleporter will restart the game (NO ESCAPE)
                 // Else teleport player into the maze to continue the game
-                if (_mazeNumber.mazeNumber == 5)
+                if (_mazeNumber.mazeNumber == 10)
                 {
                     FindObjectOfType<AudioManager>().Play("Teleport");
+                    
+                    // Disables all player actions to play outro
                     _timerUi.SetActive(false);
                     _mazeNumberUi.SetActive(false);
                     _crossHairUi.SetActive(false);
                     _fpsController.enabled = false;
                     _gunScript.enabled = false;
+                    
                     _gameOverAnim.SetTrigger("GameOver");
                     StartCoroutine(NoEscapeVoiceOver());
                 }
@@ -54,7 +57,7 @@ namespace Managers
                     {
                         FindObjectOfType<AudioManager>().Play("MazeInstructions");
                     }
-                    if (_mazeNumber.mazeNumber == 3)
+                    if (_mazeNumber.mazeNumber == 5)
                     {
                         FindObjectOfType<AudioManager>().Play("MazeTaunt");
                     }
@@ -64,6 +67,7 @@ namespace Managers
 
         private IEnumerator NoEscapeVoiceOver()
         {
+            // Plays final voiceover before restarting the game
             yield return new WaitForSeconds(1f);
             FindObjectOfType<AudioManager>().Play("NoEscape");
             yield return new WaitForSeconds(12f);
