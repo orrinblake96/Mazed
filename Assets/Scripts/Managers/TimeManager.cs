@@ -83,15 +83,15 @@ namespace Managers
             }
             
             // Changes colours of timer
-            if (minutesInt <= 3)
+            if (minutesInt < 3 && minutesInt >= 0)
             {
                 _timerMinutes.color = _timerSeconds.color = _timerSeconds100.color = Color.green;
             } 
-            else if (minutesInt > 3 && minutesInt <= 5)
+            else if (minutesInt >= 3 && minutesInt <= 5)
             {
                 _timerMinutes.color = _timerSeconds.color = _timerSeconds100.color = Color.yellow;
             }
-            else if(minutesInt > 5)
+            else if(minutesInt >= 6)
             {
                 _timerMinutes.color = _timerSeconds.color = _timerSeconds100.color = Color.red;
             }
@@ -134,7 +134,7 @@ namespace Managers
         public void TimerReduced(GameObject timeReducer)
         {
             // Update time to be reduced & destroy prefab in scene
-            _timeToReduce += 5;
+            _timeToReduce += 10;
             Destroy(timeReducer);
             _audioManager.Play("TimeReduced");
         }
@@ -142,7 +142,7 @@ namespace Managers
         public void TimerIncreased()
         {
             // Update time to be increased
-            _timeToIncrease += 10;
+            _timeToIncrease += 8;
         }
         
         private void TimerIncreasedByTrailRender()

@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9786cb-54d7-495c-a179-01ec3a733754" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mazed/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MazeItems/TimeReducer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MazeItems/TimeReducer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RandomMaze.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/OuterwallsBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/OuterwallsBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Sounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Sounds.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/StartMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/StartMenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/EnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/EnemyAttack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,10 +83,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/CityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/CityBuildingsBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyNavMesh.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EnemyAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Gun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" />
@@ -96,9 +92,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MazeNumber.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/OuterwallsBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Sounds.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/StartMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TeleportIntoMaze.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EnemyAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
       </list>
     </option>
   </component>
@@ -171,7 +169,7 @@
       <workItem from="1590070179659" duration="4037000" />
       <workItem from="1590145721683" duration="6419000" />
       <workItem from="1590231756067" duration="4567000" />
-      <workItem from="1590402213817" duration="610000" />
+      <workItem from="1590402213817" duration="2069000" />
     </task>
     <servers />
   </component>
