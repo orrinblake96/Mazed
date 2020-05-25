@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        Destroy(gameObject, 3.0f);
+        Destroy(gameObject, 1f);
         _aimTarget = GameObject.FindWithTag("Player").transform;
         _aimVec = _aimTarget.position - transform.position;
     }
